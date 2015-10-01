@@ -1,0 +1,27 @@
+/* 
+    Created on : 1.10.2015, 16:30:29
+    Author     : tvaliasek
+*/
+div#__EUNotice{
+    a.__EUNotice--okBtn{
+        display: inline-block;
+        padding: 0.4em 1.2em;
+        background-color: $okBtnBg;
+        color: $okBtnText;
+        text-align: center;
+        text-decoration: none !important;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.23), 0px 3px 10px rgba(0,0,0,0.16);
+        @include transition(padding $easeOut, box-shadow $easeOut);
+        font-weight: bold;
+        &:hover, &:focus{
+            padding: 0.5em 1.3em;
+            box-shadow: 0px 5px 13px rgba(0,0,0,0.23), 0px 5px 13px rgba(0,0,0,0.16);
+            @include transition(padding $easeIn, box-shadow $easeIn);
+        }
+        &:active{
+            @include transition(transform $easeIn, box-shadow $easeIn);
+            padding: 0.3em 1.1em;
+            box-shadow: 0px 1px 4px rgba(0,0,0,0.23), 0px 1px 4px rgba(0,0,0,0.16);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/* 
+    Created on : 1.10.2015, 14:18:40
+    Author     : tvaliasek
+*/
+//compass mixins etc.
+@import "compass";
+
+//settings
+@import "settings/_colors.scss";
+@import "settings/_sizes.scss";
+
+//main scss
+@import "partials/_base.scss";
+@import "partials/_buttons.scss";

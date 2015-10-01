@@ -1,0 +1,43 @@
+/* 
+    Created on : 1.10.2015, 16:32:09
+    Author     : tvaliasek
+*/
+
+
+div#__EUNotice{
+    display: block;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    min-height: $wrapperMinHeight;
+    background-color: $wrapperBg;
+    width: 100%;
+    font-size: $baseFontSize;
+    
+    & > .__EUNotice--inner{
+        width: 100%;
+        max-width: $innerMaxWidth;
+        margin: 0px auto;
+        padding: 0.6em 1.2em;
+        @include display-flex;
+        @include justify-content(space-between);
+        @include align-items(center);
+        
+        p{
+            color: $messageText;
+        }
+        
+        a.__EUNotice--glink{
+            color: $googleLink;
+            white-space: nowrap;
+            @include transition(color $easeOut);
+            text-decoration: none;
+            font-weight: bold;
+            &:hover, &:focus{
+                text-decoration: underline;
+                color: lighten($googleLink, 15%);
+                @include transition(color $easeIn);
+            }
+        }
+    }
+}
