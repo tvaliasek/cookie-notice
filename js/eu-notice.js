@@ -90,7 +90,7 @@ window.EUNotice = (function(){
 });
 
 
-//init -- delete it if you want custom behavior
+//init -- delete it if you want custom display behavior
 var euNotice = window.EUNotice();
 
 if(euNotice.wasAgreed() !== true){
