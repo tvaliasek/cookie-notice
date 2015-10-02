@@ -1,5 +1,6 @@
 # EU cookie notice
 Simple javascript library for integration of EU cookie notice, just link the JS and CSS files from build folder. Agreement information is saved in cookie with expiration after one year.
+
 Demo page: http://cookie-notice.valiasek.cz 
 
 ## Usage
