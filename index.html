@@ -71,7 +71,8 @@ iudicare.
         <script type="text/javascript" src="./build/eu-notice.min.js"></script>
         <script type="text/javascript">
             var btn = document.getElementById('cancelApproval');
-            btn.addEventListener('click', function(){
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
                 var notice = window.EUNotice();
                 notice.cancelAgreed();
                 window.location.reload();

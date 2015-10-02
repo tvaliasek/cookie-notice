@@ -8,10 +8,10 @@ window.EUNotice = (function(){
     
     var notice = {
         //texts and links
-        messageText: 'Tento web používá k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte.',
-        googleLinkText: 'Více informací zde.',
+        messageText: 'This site uses cookies from Google to deliver its services, to personalize ads and to analyze traffic. information about your use of this site is shared with google. By using this site, you agree to its use of cookies.',
+        googleLinkText: 'Learn More',
         googleLinkHref: 'https://www.google.com/intl/cs/policies/technologies/cookies/',
-        okBtnText: 'Souhlasím',  
+        okBtnText: 'Got it',  
         
         //test function for testing aggreement
         wasAgreed: function(){
