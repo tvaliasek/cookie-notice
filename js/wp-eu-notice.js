@@ -8,10 +8,10 @@ window.EUNotice = (function(){
     
     var notice = {
         //texts and links
-        messageText: 'This site uses cookies from Google to deliver its services, to personalize ads and to analyze traffic. information about your use of this site is shared with google. By using this site, you agree to its use of cookies.',
-        googleLinkText: 'Learn More',
-        googleLinkHref: 'https://www.google.com/intl/cs/policies/technologies/cookies/',
-        okBtnText: 'Got it',  
+        messageText: (notice_strings.eucn_message_text != null && notice_strings.eucn_message_text != undefined && notice_strings.eucn_message_text != false) ? notice_strings.eucn_message_text : 'This site uses cookies from Google to deliver its services, to personalize ads and to analyze traffic. information about your use of this site is shared with google. By using this site, you agree to its use of cookies.',
+        googleLinkText: (notice_strings.eucn_google_link_text != null && notice_strings.eucn_google_link_text != undefined && notice_strings.eucn_google_link_text != false) ? notice_strings.eucn_google_link_text : 'Learn More',
+        googleLinkHref: (notice_strings.eucn_google_link_href != null && notice_strings.eucn_google_link_href != undefined && notice_strings.eucn_google_link_href != false) ? notice_strings.eucn_google_link_href :'https://www.google.com/intl/cs/policies/technologies/cookies/',
+        okBtnText: (notice_strings.eucn_ok_btn_text != null && notice_strings.eucn_ok_btn_text != undefined && notice_strings.eucn_ok_btn_text != false) ? notice_strings.eucn_ok_btn_text :'Got it',  
         
         //test function for testing aggreement
         wasAgreed: function(){
@@ -87,7 +87,6 @@ window.EUNotice = (function(){
     
     return notice;
 });
-
 
 //init -- delete it if you want custom display behavior
 var euNotice = window.EUNotice();
