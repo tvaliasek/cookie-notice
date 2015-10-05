@@ -1,0 +1,12 @@
+/*  Created on : 5.10.2015, 12:02:36 Author     : tvaliasek
+*/
+/* line 6, ../scss/admin.scss */
+.eucn_input { width: 100%; max-width: 800px; }
+/* line 9, ../scss/admin.scss */
+.eucn_input.eucn_textarea { min-height: 250px; }
+
+/* line 14, ../scss/admin.scss */
+span[data-status="0"] { color: red; }
+
+/* line 18, ../scss/admin.scss */
+span[data-status="1"] { color: green; }

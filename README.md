@@ -21,7 +21,7 @@ Simply link needed files:
 ```
 
 ## Build process and customization
-Build process is based on standard Gruntfile.js, you can watch your changes with `grunt watch` command or build it with `grunt build`. All scss and js files are automaticaly compiled, minified and saved in /build folder.
+Build process is based on standard Gruntfile.js, you can watch your changes with `grunt watch` command or build it with `grunt build`. All scss and js files are automaticaly compiled, minified and saved in /build folder. If you want to build this library as Wordpress plugin, use command `grunt build-wp-plugin`. 
 
 ### Disabling automatic display
 If you want to disable automatic display of message, delete lines 93 - 99 from /js/eu-notice.js.
