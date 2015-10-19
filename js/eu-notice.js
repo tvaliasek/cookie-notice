@@ -15,19 +15,19 @@ window.EUNotice = (function(){
         
         //test function for testing aggreement
         wasAgreed: function(){
-            var cookieVal = document.cookie.replace(/(?:(?:^|.*;\s*)__EUNotice\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+            var cookieVal = document.cookie.replace(/(?:(?:^|.*;\s*)tvEUNotice\s*\=\s*([^;]*).*$)|^.*$/, "$1");
             return (cookieVal === baseUrl) ? true : false;
         },
         //sets cookie with agreement info
         setAgreed: function(){
             var expiration = new Date();
             expiration.setDate(expiration.getDate()+365);
-            document.cookie = ("__EUNotice="+baseUrl+"; expires="+expiration.toUTCString()+"; path='/';");
+            document.cookie = 'tvEUNotice='+baseUrl+';expires='+expiration.toUTCString()+';path=/';
             return false;
         },
         //cancel agreement cookie
         cancelAgreed: function(){
-            document.cookie = ("__EUNotice="+baseUrl+"; expires=Thu, 01 Jan 1970 00:00:01 GMT; path='/';");
+            document.cookie = 'tvEUNotice='+baseUrl+';expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/;';
             return false;
         },
         //gets message element and append it to body
